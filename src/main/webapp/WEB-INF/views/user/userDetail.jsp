@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>정보출력</title>
+<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
@@ -22,3 +23,19 @@
     <script src="../js/custom.js"></script>
 </body>
 </html>
+=======
+</head>
+<body>
+
+<form action="/userRegis">
+    <div>${user.userId}</div>
+    <div>${user.password}</div>
+    <div>${user.username}</div>
+    <div>${user.email}</div>
+
+</form>
+
+</body>
+</html>
+
+>>>>>>> 22acada... transactional 세미나 준비 프로젝트
