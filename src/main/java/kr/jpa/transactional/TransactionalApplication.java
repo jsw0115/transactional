@@ -24,7 +24,7 @@ public class TransactionalApplication {
 	@GetMapping("/")
 	public String index() {
 		System.out.println("index");
-		return "Index";
+		return "jpa/index";
 	}
 
 	@PostMapping("/bookFlightTicket")

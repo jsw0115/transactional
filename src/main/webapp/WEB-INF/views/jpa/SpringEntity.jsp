@@ -1,15 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>@Transactional</title>
+    <title>Entity</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+    </style>
 </head>
 <body>
     <%@ include file="../header.jsp" %>
     <nav id="content">
-    <h2>@Transactional</h2>
     </nav>
     <script src="custom.js"></script>
 </body>
