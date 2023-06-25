@@ -14,8 +14,10 @@ body {
 }
 
 #content {
-    margin-top: 60px; /* 메뉴바 높이에 맞게 조절 */
-    padding: 20px;
+  margin-top: 60px; /* 메뉴바 높이에 맞게 조절 */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* 왼쪽과 오른쪽에 공간 배치 */
 }
 
 ul {
@@ -25,7 +27,8 @@ ul {
 }
 
 li {
-  display: inline;
+  display: inline-block;
+  vertical-align: middle;
   margin-right: 10px;
 }
 
@@ -40,7 +43,7 @@ nav ul ul {
 }
 
 nav ul li:hover > ul {
-  display: inherit;
+  display: block;
 }
 
 nav ul {
@@ -68,6 +71,8 @@ nav ul li a {
   padding: 10px 20px;
   color: #000;
   text-decoration: none;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 nav ul ul {

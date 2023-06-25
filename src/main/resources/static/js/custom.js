@@ -20,7 +20,8 @@ menuItems.forEach(function (menuItem) {
     menuItem.addEventListener('mouseenter', showSubMenu);
     menuItem.addEventListener('mouseleave', hideSubMenu);
 });
-  // 메뉴 항목 클릭 시 해당 섹션으로 스크롤하는 함수
+
+// 메뉴 항목 클릭 시 해당 섹션으로 스크롤하는 함수
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -28,15 +29,12 @@ function scrollToSection(sectionId) {
     }
 }
 
-  // 메뉴 클릭 이벤트 처리
-const menuItems = document.querySelectorAll('#header ul li');
-menuItems.forEach(function (menuItem) {
-    const link = menuItem.querySelector('a');
-    if (link) {
-        const sectionId = link.getAttribute('href').replace('#', '');
-        menuItem.addEventListener('click', function (event) {
-            event.preventDefault();
-            scrollToSection(sectionId);
-        });
-    }
+// 메뉴 클릭 이벤트 처리
+const menuLinks = document.querySelectorAll('#header ul li a');
+menuLinks.forEach(function (menuLink) {
+    const sectionId = menuLink.getAttribute('href').replace('#', '');
+    menuLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        scrollToSection(sectionId);
+    });
 });
