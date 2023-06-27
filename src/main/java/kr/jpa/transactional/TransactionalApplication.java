@@ -1,8 +1,8 @@
 package kr.jpa.transactional;
 
-import kr.jpa.transactional.book.dto.FlightBookingAcknowledgement;
-import kr.jpa.transactional.book.dto.FlightBookingRequest;
-import kr.jpa.transactional.book.service.FlightBookingService;
+//import kr.jpa.transactional.book.dto.FlightBookingAcknowledgement;
+//import kr.jpa.transactional.book.dto.FlightBookingRequest;
+//import kr.jpa.transactional.book.service.FlightBookingService;
 import kr.jpa.transactional.user.dto.UserDTO;
 import kr.jpa.transactional.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.*;
 @EnableTransactionManagement
 public class TransactionalApplication {
 
-	@Autowired
-	private FlightBookingService service;
+//	@Autowired
+//	private FlightBookingService service;
 
 	@GetMapping("/")
 	public String index() {
@@ -27,10 +27,10 @@ public class TransactionalApplication {
 		return "jpa/index";
 	}
 
-	@PostMapping("/bookFlightTicket")
-	public FlightBookingAcknowledgement bookFlightTicket (@RequestBody FlightBookingRequest request) {
-		return service.bookFlightTicket(request);
-	}
+//	@PostMapping("/bookFlightTicket")
+//	public FlightBookingAcknowledgement bookFlightTicket (@RequestBody FlightBookingRequest request) {
+//		return service.bookFlightTicket(request);
+//	}
 
 //	@GetMapping("/user")
 //	public String userRegister() {
