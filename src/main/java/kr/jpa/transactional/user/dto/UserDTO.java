@@ -1,5 +1,6 @@
 package kr.jpa.transactional.user.dto;
 
+import kr.jpa.transactional.user.entity.UserEntity;
 import lombok.*;
 
 @Data
@@ -10,6 +11,7 @@ public class UserDTO {
     public String username;
     public String password;
     public String email;
+
 
     public Long getUserId() {
         return userId;
@@ -48,5 +50,14 @@ public class UserDTO {
         this.username = username;
         this.password = password;
         this.email = email;
+    }
+
+    public static UserDTO toUserDTO(UserEntity userEntity) {
+        UserDTO userDTO = new UserDTO();
+        userDTO.setUserId(userEntity.getUserId());
+        userDTO.setUsername(userEntity.getUsername());
+        userDTO.setPassword(userEntity.getPassword());
+        userDTO.setEmail(userEntity.getEmail());
+        return userDTO;
     }
 }

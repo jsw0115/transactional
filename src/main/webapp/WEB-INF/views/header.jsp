@@ -75,10 +75,10 @@
     </li>
     <li><a href="/user">USER 예제</a>
       <ul>
-        <li><a href="/user">USER 등록</a></li>
-        <li><a href="/user/list">USER 리스트</a></li>
-        <li><a href="/user/findBy">USER 정렬</a></li>
-        <li><a href="/user/update">USER 수정</a></li>
+        <li><a href="/user">등록</a></li>
+        <li><a href="/user/list">리스트</a></li>
+        <li><a href="/user/findBy">정렬</a></li>
+        <li><a href="/user/update">수정</a></li>
       </ul>
     </li>
   </ul>

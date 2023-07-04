@@ -18,7 +18,6 @@
 <head>
 <meta charset="UTF-8">
 <title>정보입력</title>
-<<<<<<< HEAD
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <style>
 body {
@@ -126,6 +125,55 @@ nav ul ul ul {
   left: 100%;
   top: 0;
 }
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+#content {
+  margin-top: 60px; /* 메뉴바 높이에 맞게 조절 */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* 왼쪽과 오른쪽에 공간 배치 */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+form table {
+  width: 100%;
+}
+
+form tr {
+  margin-bottom: 10px;
+}
+
+form td:first-child {
+  font-weight: bold;
+  width: 150px;
+}
+
+input[type="password"],
+input[type="text"] {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #16a085;
+}
+
 </style>
 </head>
 <body>
@@ -154,21 +202,5 @@ nav ul ul ul {
         <div style="width: 16.666%;"></div> <!-- 오른쪽 빈 공간 -->
     </nav>
     <script src="js/custom.js"></script>
-=======
-</head>
-<body>
-
-<form action="/user/Regist"  method ="post">
-    <%-- input 앞에 쓰면 레이블 같은 느낌. size 는 크기, maxlength 는 최대 받는 글자수 --%>
-
-    비&nbsp밀&nbsp번&nbsp호 : <input type="password" name ="password"/><br/>
-    이&nbsp름 : <input type="text" name="username"/><br/>
-    이&nbsp메&nbsp일 : <input type="text" name="email"/><br/>
-
-    <input type="submit" value="제출"/>
-
-</form>
-
->>>>>>> 22acada... transactional 세미나 준비 프로젝트
 </body>
 </html>
